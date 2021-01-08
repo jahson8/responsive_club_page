@@ -23,6 +23,9 @@ html {
 *  Set Responsive Grid
 */
 
+
+
+
 .row::before,
 .row::after {
     display: table;
@@ -38,31 +41,43 @@ html {
   width: 100%;
 }
 
-@media only screen and (min-width: 800px){
-    .one{
+
+@media only screen and (min-width: 48em){
+
+    .wrap {
+        min-height: calc(100vh - 88px);
+    }
+
+
+    .col {
+        float: left;
+        padding-right: 1.25em;
+    }
+    
+    .col:last-child {
+        padding-right: 0;
+    }
+
+    .one {
         width: 100%;
     }
 
-    .half{
-        width: calc(100% / 2);
+    .half {
+        width: calc(100%/2);
     }
 
-    .one-third{
+    .one-third {
         width: calc(100% / 3);
     }
 
-    .one-fourth{
+    .one-fourth {
         width: calc(100% / 4);
     }
 
     .two-thirds {
         width: calc(100% / 3 * 2);
     }
-    .column {
-        float: left;
-    }
 
-    
 }
 
 
@@ -70,5 +85,240 @@ html {
      ========================================================================== */
   
 /**
-*  Set Responsive Grid
+*  
 */
+
+body,
+html {
+    font-size: 16px;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    line-height: 1.5;
+    background-color: #edeff0;
+}
+
+
+body {
+    padding-top: 6em;
+}
+
+section + section,
+footer {
+    margin-top: 3.125em;
+}
+
+.container{
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+@media only screen and (min-width: 48em){
+    .container {
+        width: 70%;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}
+
+/* Responsive Images */
+
+.img-container{
+    overflow: hidden;   
+}
+
+.img-container img {
+    max-width: 100%;
+    max-height: auto;
+    display: block;
+}
+
+
+/* Header Styling
+     ========================================================================== */
+  
+/**
+*  
+*/
+
+.main-header{
+    background-color: #003f5c;
+    text-align: center;
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    /* height: 4.375em; */
+}
+
+.main-header h1 {
+    margin: 0;
+    color: #5C0002;
+}
+
+.main-header a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+
+
+
+/* Nav Styles */
+
+.main-nav li a {
+    display: block;
+    padding: 1.25em 0;
+    transition: background-color 300ms;
+}
+
+.main-nav li a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+    background-color: #fff;
+    color:#003f5c;
+
+}
+
+.logo {
+    text-transform: uppercase;
+    font-size: 1.4em;
+    margin-bottom: 0;
+
+  }
+  
+  .logo a,
+  .logo a:visited {
+    color: #ffffff;
+    text-decoration: none;
+    vertical-align: middle;
+  }
+
+#nav-list {
+    display: none;
+}
+
+
+.nav-mobile {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 70px;
+    width: 70px;
+}
+
+@media(min-width:48em) {
+    #nav-list {
+        display: block;
+        margin-top: 0;
+    }
+
+    #nav-list li {
+        display: inline-block;
+    }
+
+    .nav-mobile {
+        display: none;
+    }
+}
+
+
+#nav-toggle {
+    cursor: pointer;
+    padding: 10px 35px 16px 0px;
+  }
+  
+  #nav-toggle span,
+  #nav-toggle span:before,
+  #nav-toggle span:after {
+    cursor: pointer;
+    border-radius: 1px;
+    height: 5px;
+    width: 35px;
+    background: #ffffff;
+    position: absolute;
+    display: block;
+    content: '';
+    transition: all 300ms ease-in-out;
+  }
+  
+#nav-toggle span:before {
+    top: -10px;
+}
+
+#nav-toggle span:after {
+    bottom: -10px;
+}
+
+#nav-toggle.active span {
+    background-color: transparent;
+}
+
+#nav-toggle.active span:before,
+#nav-toggle.active span:after {
+    top: 0;
+}
+
+#nav-toggle.active span:before {
+    transform: rotate(45deg);
+}
+
+#nav-toggle.active span:after {
+    transform: rotate(-45deg);
+}
+
+
+
+/* join Section Styling
+     ========================================================================== */
+  
+/**
+*  
+*/
+
+#join a {
+    background-color: #5a0002;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    padding: 17px;
+    border: 1px solid #003f5c;
+    border-radius: 5px;
+    display: block;
+    width: 90px;
+    margin-top: 1em;
+}
+
+
+
+
+/* Info Section Styling
+     ========================================================================== */
+  
+/**
+*  
+*/
+
+.target {
+    font-size: 2.5em;
+    text-align: center;
+}
+
+
+
+
+/* Footer Styling
+     ========================================================================== */
+  
+/**
+*  
+*/
+
+footer {
+    padding: 1em;
+    text-align:center;
+    background-color: #5a0002;
+    color:#fff;
+}

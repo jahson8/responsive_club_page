@@ -3,26 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Gotham Archery Club</title>
     <link rel="stylesheet" href="./resources/css/reset.css">
     <link rel="stylesheet" href="./resources/css/style.css">
 </head>
 <body>
-    <header>
-        <div>
-            <img src="" alt="Company Logo">
-        </div>
-        <nav class="header-nav">
-            <ul>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        section
-    </main>
-    <footer></footer>
+    <div class="wrap">
+        <header class="main-header " >
+            <div class="container row">
+                <div class="logo col one-third">
+                    <a href="#top" >gac</p>
+                </div>
+
+                <nav class=" main-nav col two-third">
+                    <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+                    <ul id="nav-list">
+                        <li><a href="#join">Join</a></li>
+                        <li><a href="#hobby">Hobby</a></li>
+                        <li><a href="#info">Information</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main class="container">
+            <section id="join" class="row">
+                <div class="col half img-container">
+                    <img src="./resources/images/child-archer.jpg" alt="Child Archer">
+                </div>
+                <div class="half col">
+                    <h1>Gotham Archery Club</h1>
+                    <h2>Join our Amazing Community!</h2>
+                    <p>Membership is now open</p>
+                <p><a href="">Join Us</a></p>
+                </div>
+            </section>
+            <section class="row" id="hobby">
+                <h3>Pick up A new Hobby</h3>
+                <ul class="img-container">
+                    <li class=" one-third col">
+                        <img src="./resources/images/target.jpg" alt="A target with an arrow stuck in">
+                        <p>Lorem ipsum dolor sit amet</p>
+                    </li>
+                    <li class=" one-third col">
+                        <img src="./resources/images/arrow.jpg" alt="The backend of an arrow">
+                        <p>Lorem ipsum dolor sit amet</p>
+                    </li>
+                    <li class=" one-third col">
+                        <img src="./resources/images/archers.jpg" alt="A grown archer">
+                        <p>Lorem ipsum dolor sit amet</p>
+                    </li>
+                </ul>
+            </section>
+            <section class="row" id="info">
+                <h2>More Info</h2>
+                <div class="col one-fourth">
+                    <p class="target">&#127919;</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et justo sed orci rhoncus semper. Sed sollicitudin pretium iaculis. </p>
+                </div>
+                <div class="col one-fourth">
+                    <p class="target">&#127919;</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et justo sed orci rhoncus semper. Sed sollicitudin pretium iaculis.  </p>
+                </div>
+                <div class="col one-fourth">
+                    <p class="target">&#127919;</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et justo sed orci rhoncus semper. Sed sollicitudin pretium iaculis.  </p>
+                </div>
+                <div class="col one-fourth">
+                    <p class="target">&#127919;</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et justo sed orci rhoncus semper. Sed sollicitudin pretium iaculis.  </p>
+                </div>
+            </section>
+        </main>
+    </div>
+    <footer>
+        <p> &copy2021</p>
+    </footer>
+    <script src="resources/js/scripts.js"></script>
 </body>
 </html>

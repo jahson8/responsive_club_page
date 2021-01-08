@@ -33,14 +33,6 @@ html {
     clear: both;
 }
 
-.one,
-.one-third,
-.two-thirds,
-.one-fourth,
-.half {
-  width: 100%;
-}
-
 
 @media only screen and (min-width: 48em){
 
@@ -58,25 +50,6 @@ html {
         padding-right: 0;
     }
 
-    .one {
-        width: 100%;
-    }
-
-    .half {
-        width: calc(100%/2);
-    }
-
-    .one-third {
-        width: calc(100% / 3);
-    }
-
-    .one-fourth {
-        width: calc(100% / 4);
-    }
-
-    .two-thirds {
-        width: calc(100% / 3 * 2);
-    }
 
 }
 
@@ -106,6 +79,12 @@ footer {
     margin-top: 3.125em;
 }
 
+h1,
+h2,
+h3 {
+    color: #5a0002;
+}
+
 .container{
     padding-left: 1em;
     padding-right: 1em;
@@ -129,6 +108,8 @@ footer {
     max-width: 100%;
     max-height: auto;
     display: block;
+    border-radius: 10px;
+    padding: 5px;
 }
 
 
@@ -166,6 +147,10 @@ footer {
 
 
 /* Nav Styles */
+
+.main-nav {
+    padding-bottom: 10px;
+}
 
 .main-nav li a {
     display: block;
@@ -211,8 +196,13 @@ footer {
 
 @media(min-width:48em) {
     #nav-list {
-        display: block;
         margin-top: 0;
+        float: left;
+    }
+
+    #nav-list,
+    .logo {
+        display: block;
     }
 
     #nav-list li {
@@ -278,20 +268,45 @@ footer {
 *  
 */
 
+
 #join a {
-    background-color: #5a0002;
+    background-color: #003f5c;
     color: #fff;
     text-align: center;
     text-decoration: none;
-    padding: 17px;
-    border: 1px solid #003f5c;
+    padding: 12px;
     border-radius: 5px;
     display: block;
     width: 90px;
     margin-top: 1em;
 }
 
+@media(min-width: 62.5em) {
+    #join .col{
+        width: 50%;
+    }
+}
 
+
+/* Hobby Section Styling
+     ========================================================================== */
+  
+/**
+*  
+*/
+
+@media(min-width: 48em) {
+    #hobby .col {
+        width:50%;
+    }
+}
+
+
+@media(min-width: 62.5em){
+    #hobby .col {
+        width:33.33%;
+    }
+}
 
 
 /* Info Section Styling
@@ -301,9 +316,28 @@ footer {
 *  
 */
 
+
 .target {
     font-size: 2.5em;
     text-align: center;
+}
+
+@media(min-width: 48em) {
+    #info .col {
+        width: 50%;
+    }
+}
+
+@media(min-width: 60em){
+    #info .col {
+        width: 33%;
+    }      
+}
+
+@media(min-width: 75em){
+    #info .col {
+        width: 25%;
+    }    
 }
 
 

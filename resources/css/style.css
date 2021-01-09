@@ -300,6 +300,10 @@ h2 {
     margin-top: 1em;
 }
 
+#join a:hover{
+    opacity: 0.85;
+}
+
 
 @media(min-width: 60em) {
     #join .col{

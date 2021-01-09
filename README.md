@@ -10,6 +10,7 @@
 A sample Web Page showcasing responsive web development techniques.
 Techniques such as:
 
+* Semantic Mark up
 * Media Queries
 * Responsive Grid
 * Responsive Images
